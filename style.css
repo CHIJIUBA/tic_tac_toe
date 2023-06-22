@@ -1,0 +1,300 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    background: #003366;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ccc7c7;
+    padding: 8px 32px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo img {
+    height: 48px;
+    width: 48px;
+}
+
+.right-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.right-link ul {
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.right-link ul li a {
+    text-decoration: none;
+    color: #003366;;
+}
+
+.right-link img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer ul li {
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: white;
+    font-family: cursive;
+}
+
+.footer ul li a {
+    color: #003366;
+}
+
+.footer {
+    padding: 16px;
+    border-top: 2px solid #ccc7c7;
+}
+
+.contents {
+    flex: 1;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 150px;
+    border-right: 2px solid #ccc7c7;
+    height: 100%;
+}
+
+.container {
+    background: #eee;
+    flex: 1;
+    padding: 8px 8px;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    background: #cce6ff;
+}
+
+.top {
+    padding: 16px;
+    color: #003366;
+}
+
+.putting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.panel {
+    max-width: 500px;
+    border: 1px solid #428bca;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.panel-header {
+    background: #428bca;
+    color: white;
+    text-align: right;
+    font-family: cursive;
+    font-size: 25px;
+    padding: 8px;
+}
+.panel-body {
+    width: 364px;
+    flex-wrap: wrap;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.panel-footer {
+    background: #eee;
+    border-top: 1px solid grey;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cell {
+    height: 100px;
+    display: flex;
+    font-size: 50px;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    background: #003366;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#reset {
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    padding: 4px;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* this is for the modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 8% auto auto auto;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 1.5s;
+    border:2px solid #003366;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #003366;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-body h2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #003366;
+    font-size: 30px;
+}
+
+#optitle {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.controlButton {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 16px;
+
+}
+
+.controlButton button {
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    /* font-family: cursive; */
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+/* end of modal design */

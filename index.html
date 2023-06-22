@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Tic Tac Toe Game
+        </div>
+        <div class="right-link">
+            <ul>
+                <li id="reset"><a href="#">Reset Game</a></li>
+            </ul>
+        </div>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <div class="modal-header">
+                <!-- <span class="close">&times;</span> -->
+                <h2 id="optitle">Game Over</h2>
+            </div>
+            <div class="modal-body">
+               <h2 id="winMessage"></h2>
+               <div class="controlButton">
+                <button id="newGame">New Game</button>
+                <button id="quit">Quit Game</button>
+               </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div> -->
+            </div>
+        
+        </div>
+    </header>
+    <div class="contents">
+        <!-- <div class="sidebar">
+
+        </div> -->
+        <div class="container">
+            <div class="body">
+                <div class="putting">
+                    <div class="panel">
+                        <div class="panel-header" id="turnTeller">
+                            X turn
+                        </div>
+                        <div class="panel-body">
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                        </div>
+                        <!-- <div class="panel-footer">
+                            <button>Easy</button>
+                            <button>Medium</button>
+                            <button>Hard</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="#" id="playerx">Player X => 0</a></li>
+            <li><a href="#" id="tie">Ties => 0</a></li>
+            <li><a href="#" id="playero">Player O => 0</a></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
